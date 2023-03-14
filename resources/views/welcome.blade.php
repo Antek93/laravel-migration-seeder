@@ -19,15 +19,38 @@
                 @foreach ($trains as $train)
                     <div class="col-3">
                         <div class="card">
-                            <h2>
-                                {{ $train->id }}
-                            </h2>
-                            <h2>
-                                {{ $train->Azienda }}
-                            </h2>
-                            <h2>
-                                {{ $train->Stazione}}
-                               </h2>
+                            <div class="card-body">
+                                <h5>
+                                    {{ $train->id }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Azienda }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Stazione_di_arrivo }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Stazione_di_partenza }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Orario_di_partenza }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Orario_di_arrivo }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Codice_treno }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Numero_carrozze }}
+                                </h5>
+                                <h5>
+                                    {{ $train->In_orario }}
+                                </h5>
+                                <h5>
+                                    {{ $train->Cancellato }}
+                                </h5>
+                            </div>
                         </div>
                     </div>
                 @endforeach
