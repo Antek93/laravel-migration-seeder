@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 //Controllers
 
 use App\http\Controllers\Guest\PageController;
+use Faker\Guesser\Name;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,4 @@ use App\http\Controllers\Guest\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index']); //attributo statico ::
